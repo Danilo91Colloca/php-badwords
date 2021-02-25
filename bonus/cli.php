@@ -27,18 +27,25 @@ echo $correction;
 
 echo "\r\n\r\n******************************************************************** \r\n\r\n";
 
-echo "               Funzione trim(stringa)\r\n";
+echo "               Funzione trim(stringa)\r\n\r\n";
 
-echo "senza funzione trim\r\n\r\n";
-echo "vado in città con: \r\n " . $toTrim;
+echo "                  >>>>>>>senza funzione trim<<<<<<<\r\n\r\n";
+echo "vado in città con: " . $toTrim;
 
-echo "\r\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\r\n";
 
-echo "con trim: \r\n\r\n";
+echo "\r\n\r\n          >>>>>>>>>>>>>con trim:<<<<<<<<<<< \r\n\r\n";
 echo "vado in città con " . trim($toTrim);
 
 echo "\r\n\r\n******************************************************************** \r\n\r\n";
 
-echo "                      Funzione strpos\r\n\r\n";
+echo "                 >>>>>>>>>>>> Funzione strpos<<<<<<<<<<<<<\r\n\r\n";
 echo "cerco in lorem ipsum la posizione della parola <<aliquid>> \r\n\r\n";
 echo "la posizione è: " . strpos($textOriginal, 'aliquid') . "\r\n\r\n";
+
+echo "\r\n\r\n******************************************************************** \r\n\r\n";
+
+echo "                 >>>>>>>>>>>> Funzione str_replace<<<<<<<<<<<<<\r\n\r\n";
+
+echo "                 >>>>>>>>>>>>mofico la prima parte del Lorem Ipsum <<<<<<<<<<< \r\n\r\n";
+
+echo str_replace("Lorem ipsum dolor sit amet,", "Pippus, Plutus et Paperinus,", $textOriginal);
