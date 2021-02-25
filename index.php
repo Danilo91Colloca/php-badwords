@@ -16,9 +16,9 @@ $textLenght = strlen($text);
 
 // var_dump('quest è il testo: ' . $text . 'questa è la sua lunghezza: ' . $textLenght);
 
-//variabile che contiene una funzione per sostituira la parola errata all'interno del mio testo/stringa
+//variabile che contiene una funzione per sostituire la parola errata all'interno del mio testo/stringa dalla query string
 
-$textCorrection = str_replace('reprehenderit', '****', $text);
+$textCorrection = str_replace('reprehenderit', $_GET['word'], $text);
 // var_dump($textCorrection);
 
 ?>
@@ -47,7 +47,7 @@ $textCorrection = str_replace('reprehenderit', '****', $text);
     </span>
 
     <h1 style="margin-bottom : 20px;">
-    Questo è il testo originale
+    Questo è il testo corretto in GET
     </h1>
     <p style="width : 400px;  margin-bottom : 70px">
       <?php echo $textCorrection ?>
