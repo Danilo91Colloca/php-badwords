@@ -25,34 +25,34 @@ $textCorrection = str_replace('reprehenderit', '****', $text);
 
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  <h1 style="margin-bottom : 20px;">
-   Questo è il testo originale
-  </h1>
-  <p style="width : 400px;  margin-bottom : 70px">
-    <?php echo $text ?>
-  </p>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP DC</title>
+  </head>
+  <body>
+    <h1 style="margin-bottom : 20px;">
+    Questo è il testo originale
+    </h1>
+    <p style="width : 400px;  margin-bottom : 70px">
+      <?php echo $text ?>
+    </p>
 
-  <h1 style="margin : 0px 15px 25px 0px; display : inline-block">
-    Questa è la lunghezza del paragrafo:
-  </h1>
-  <span style="font-size : 25px">
-    <?php echo $textLenght ?>
-  </span>
+    <h1 style="margin : 0px 15px 25px 0px; display : inline-block">
+      Questa è la lunghezza del paragrafo:
+    </h1>
+    <span style="font-size : 25px">
+      <?php echo $textLenght ?>
+    </span>
 
-  <h1 style="margin-bottom : 20px;">
-   Questo è il testo originale
-  </h1>
-  <p style="width : 400px;  margin-bottom : 70px">
-    <?php echo $textCorrection ?>
-  </p>
+    <h1 style="margin-bottom : 20px;">
+    Questo è il testo originale
+    </h1>
+    <p style="width : 400px;  margin-bottom : 70px">
+      <?php echo $textCorrection ?>
+    </p>
 
-  
-</body>
+    
+  </body>
 </html>
