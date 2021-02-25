@@ -9,6 +9,7 @@ $correction = str_replace('dolor', $argv[1], $textOriginal);
 
 $toTrim = "    Ciccio, Pippo, Pluto   ";
 
+
 //sezione print
 
 echo "\r\n"; #uso degli spazi per staccare graficamente il titolo del bonus
@@ -16,6 +17,7 @@ echo "\r\n"; #uso degli spazi per staccare graficamente il titolo del bonus
 echo "\r\n******************************************************************** \r\n";
 echo "            BONUS DANILO C. SCRIPT DA TERMINALE";
 echo " \r\n******************************************************************** \r\n\r\n";
+
 //print del testo lorem ipsum
 echo "            Testo Lorem Ipsum Originale\r\n\r\n";
 echo $textOriginal;
@@ -29,7 +31,14 @@ echo "               Funzione trim(stringa)\r\n";
 
 echo "senza funzione trim\r\n\r\n";
 echo "vado in città con: \r\n " . $toTrim;
+
 echo "\r\n>>>>>>>>>>>>>>>>>>>>>>>>>>>>><<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<\r\n";
+
 echo "con trim: \r\n\r\n";
 echo "vado in città con " . trim($toTrim);
+
 echo "\r\n\r\n******************************************************************** \r\n\r\n";
+
+echo "                      Funzione strpos\r\n\r\n";
+echo "cerco in lorem ipsum la posizione della parola <<aliquid>> \r\n\r\n";
+echo "la posizione è: " . strpos($textOriginal, 'aliquid') . "\r\n\r\n";
